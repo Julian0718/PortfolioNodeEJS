@@ -1,0 +1,54 @@
+<%- include ('partials/nav-bar.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Home</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/style.css" >
+    </head>
+
+    <body>
+        <div class="contact_form">
+            <div class="formulario">      
+            <h1>Form Contact</h1>
+                <h3>Send me a message and We can talk about your projects </h3>
+                <form>       
+                        <p>
+                            <label for="first_name">First Name <span>*</span> </label>
+                            <input type="text" name="set_first_name" id="first_name" required="mandatory" placeholder="First Name">
+                        </p>
+
+                        <p>
+                            <label for="last_name">Last Name <span>*</span> </label>
+                            <input type="text" name="set_last_name" id="last_name" required="mandatory" placeholder="Last Name">
+                        </p>
+
+                        <p>
+                            <label for="phone">Phone Number </label>
+                            <input type="number" name="set_phone_number" id="phone" placeholder="Phone number">
+                        </p>   
+
+                        <p>
+                        <label for="email">Email <span class="mandatory">*</span> </label>
+                            <input type="email" name="set_email" id="email" required="mandatory" placeholder="Email">
+                        </p>  
+
+                        <p>
+                        <label for="message">Message
+                            <span class="mandatory">*</span>
+                        </label>                     
+                            <textarea name="set_message" id="message" required="mandatory" placeholder="Write a commet"></textarea> 
+                        </p>                    
+                    
+                        <button type="submit" name="submit" id="submit"><p>Submit</p></button>
+        
+                        <p class="warning">
+                        <span class="mandatory"> * </span>Mandatory fields
+                        </p>      
+                </form>
+            </div>  
+        </div>
+
+    </body>
+</html>
